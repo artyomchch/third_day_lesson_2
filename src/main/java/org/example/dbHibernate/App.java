@@ -9,10 +9,9 @@ public class App {
     public static void main(String[] args) {
 //		ClassPathXmlApplicationContext context =
 //				new ClassPathXmlApplicationContext("applicationContext.xml");
-////
-//
 
-        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
+
+       AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
         CourseDAO courseDao = context.getBean(CourseDAO.class);
 
 
